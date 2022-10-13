@@ -45,14 +45,14 @@ void run_right(){
 	  k=0x01; 
 	  for(j=0;j<=l;j++){
 	  Bits1_PutVal(k ^ 0x0f);
-	  for(i=0;i<=0x7ffff;i++);
+	  for(i=0;i<=0x7fff;i++);
 	  k=k<<1;
 	}  	 	
 }
 void run_left(){
 	  for(j=0;j<=l;j++){
 	  Bits1_PutVal(k ^ 0x0f);	
-	  for(i=0;i<=0x7ffff;i++);
+	  for(i=0;i<=0x7fff;i++);
 	  k=k>>1; 
 	  }
 	
