@@ -39,9 +39,10 @@
 #include "IO_Map.h"
 
 
-long int i;
-int j,k,l;
+unsigned char i;
+int l;
 void run_right(){
+	int j,k;
 	  k=0x01; 
 	  for(j=0;j<=l;j++){
 	  Bits1_PutVal(k ^ 0x0f);
@@ -50,6 +51,7 @@ void run_right(){
 	}  	 	
 }
 void run_left(){
+	int j,k;
 	  for(j=0;j<=l;j++){
 	  Bits1_PutVal(k ^ 0x0f);	
 	  for(i=0;i<=0x7fff;i++);
