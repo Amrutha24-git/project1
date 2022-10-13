@@ -55,29 +55,14 @@ int i;
   while(1){
 	
 	  	  
- 	  Bits1_PutVal(0x1f);
- 	  for(i=0;i<0x7ffff;i++);
- 	  
- 	 Bits1_PutVal(0x4f);
- 	 for(i=0;i<0x7ffff;i++);
+ 	 k=0x01;
+ 	for(j=0;j<=7;j++)
+ 	{
  	  	  
- 	 Bits1_PutVal(0x2f);
- 	 for(i=0;i<0x7ffff;i++);
- 	  
- 	 Bits1_PutVal(0x8f);
- 	 for(i=0;i<0x7ffff;i++);
- 	  	  
- 	  Bits1_PutVal(0x0d);
- 	  for(i=0;i<0x7ffff;i++);
- 	  	  	  
- 	  Bits1_PutVal(0x0e);
- 	  for(i=0;i<0x7ffff;i++);
- 	  	  
- 	   Bits1_PutVal(0x0b); 	  	
- 	   for(i=0;i<0x7ffff;i++);
- 	  	 	  	  	  
- 	   Bits1_PutVal(0x07);
- 	  for(i=0;i<0x7ffff;i++);
+ 	  	 Bits1_PutVal(k ^ 0x0f);
+ 	  	 for(i=0;i<=0x7ffff;i++);
+ 	  	 k=k<<1;
+ 	}
  	  
  	
 
