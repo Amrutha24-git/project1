@@ -44,8 +44,8 @@
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
-  /* Write your local variable definition here */
-long int i;
+  /* Write your local variable definition here *
+  unsigned int i;
 int j,k;
 //int j,k;
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
